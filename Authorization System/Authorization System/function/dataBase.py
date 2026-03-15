@@ -127,5 +127,15 @@ user_10 = {
     "penalty_status": "2078"   
 }
 
+admin ={ 
+    "username": "admin",
+    "password_hash": "$2b$12$2WVctSyF0lG2Bbd4FFp7KOPjE83tepCgq2cbB6GnRJa8e.7GniOuK",
+    "first_name": "Адмін"
+}
+
+
+
+
 user_list = [user_1, user_2, user_3, user_4, user_5, user_6, user_7, user_8, user_9, user_10]
+auth_user_list = user_list + [admin]
 
