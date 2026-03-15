@@ -1,11 +1,11 @@
 ####################### БЛОК ДЛЯ ВХОДУ В СИСТЕМУ ####################
 
 import bcrypt
-from function.dataBase import users_list
+from function.dataBase import user_list
 
 def check_login(entered_username, entered_password):
     password_bytes = entered_password.encode('utf-8')
-    for user in users_list:
+    for user in user_list:
         if user["username"] == entered_username:
             saved_hash_bytes = user["password_hash"].encode('utf-8')
             if bcrypt.checkpw(password_bytes, saved_hash_bytes):
@@ -14,8 +14,9 @@ def check_login(entered_username, entered_password):
                 return False            
     return False 
 
-def register_user(username, password):
-    pass # TODO: Implement this function
+
+
+
 
 
 
