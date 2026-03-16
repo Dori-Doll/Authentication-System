@@ -139,3 +139,32 @@ admin ={
 user_list = [user_1, user_2, user_3, user_4, user_5, user_6, user_7, user_8, user_9, user_10]
 auth_user_list = user_list + [admin]
 
+ADMIN_USERNAME = "admin"
+
+FIELD_LABELS = {
+    "username": "Логін",
+    "password_hash": "Хеш пароля",
+    "first_name": "Ім'я",
+    "last_name": "Прізвище",
+    "father_name": "По батькові",
+    "birth_place": "Місце народження",
+    "birth_date": "Дата народження",
+    "sex": "Стать",
+    "family_status": "Сімейний стан",
+    "penalty_status": "Штрафи"
+}
+
+PROFILE_HIDDEN_FIELDS = {"username", "password_hash"}
+
+
+def get_regular_users():
+    return user_list
+
+
+def get_auth_users():
+    return auth_user_list
+
+
+def is_admin_username(username):
+    return username == ADMIN_USERNAME
+
