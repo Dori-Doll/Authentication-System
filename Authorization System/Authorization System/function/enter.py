@@ -19,9 +19,8 @@ import re
 import calendar
 from datetime import date, datetime
 from pathlib import Path
-import dataBase
 # Імпортується файл dataBase.py де записана інформація про користувачів.
-from dataBase import (
+from .dataBase import (
     FIELD_LABELS,
     PROFILE_HIDDEN_FIELDS,
     get_auth_users,
@@ -472,7 +471,6 @@ def _add_user_to_runtime_collections(new_user_data):
         auth_users.insert(len(auth_users) - 1, new_user_data)
     else:
         auth_users.append(new_user_data)
-
 
 def register_new_user(registration_data):
     # Головна функція реєстрації для gui.py.
