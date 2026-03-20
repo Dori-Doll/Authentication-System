@@ -9,6 +9,8 @@ Yarou: "1254ya36"
 Olena_P: "200Olena"
 Svit0101: "10101010"
 
+admin: "0000"
+
 user_1 = alex_h: "10101210"
 user_2 = soNYA: "12345678"     
 user_3 = Vasyl98: "87654321"  
